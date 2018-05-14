@@ -98,6 +98,48 @@ let g:terminal_color_7  = get(s:colors.base6, 'gui')
 let g:terminal_color_15 = g:terminal_color_7
 
 
+
+" :::::::::::::::::::: Native highlighting :::::::::::::::::
+" wallace Hi Groups: {{{
+" common hi groups
+call s:HL('wallaceFg0', s:fg0)
+call s:HL('wallaceFg1', s:fg1)
+call s:HL('wallaceFg2', s:fg2)
+call s:HL('wallaceFg3', s:fg3)
+call s:HL('wallaceFg4', s:fg4)
+call s:HL('wallaceGray', s:gray)
+call s:HL('wallaceBg0', s:bg0)
+call s:HL('wallaceBg1', s:bg1)
+call s:HL('wallaceBg2', s:bg2)
+call s:HL('wallaceBg3', s:bg3)
+call s:HL('wallaceBg4', s:bg4)
+" -----
+call s:HL('wallaceRed', s:red)
+call s:HL('wallaceRedBold', s:red, s:none, s:bold)
+call s:HL('wallaceGreen', s:green)
+call s:HL('wallaceGreenBold', s:green, s:none, s:bold)
+call s:HL('wallaceYellow', s:yellow)
+call s:HL('wallaceYellowBold', s:yellow, s:none, s:bold)
+call s:HL('wallaceBlue', s:blue)
+call s:HL('wallaceBlueBold', s:blue, s:none, s:bold)
+call s:HL('wallacePurple', s:purple)
+call s:HL('wallacePurpleBold', s:purple, s:none, s:bold)
+call s:HL('wallaceAqua', s:aqua)
+call s:HL('wallaceAquaBold', s:aqua, s:none, s:bold)
+call s:HL('wallaceOrange', s:orange)
+call s:HL('wallaceOrangeBold', s:orange, s:none, s:bold)
+"-----
+call s:HL('wallaceRedSign', s:red, s:sign_column, s:invert_signs)
+call s:HL('wallaceGreenSign', s:green, s:sign_column, s:invert_signs)
+call s:HL('wallaceYellowSign', s:yellow, s:sign_column, s:invert_signs)
+call s:HL('wallaceBlueSign', s:blue, s:sign_column, s:invert_signs)
+call s:HL('wallacePurpleSign', s:purple, s:sign_column, s:invert_signs)
+call s:HL('wallaceAquaSign', s:aqua, s:sign_column, s:invert_signs)
+" }}}
+
+
+
+
 " :::::::::::::::::::: Native highlighting :::::::::::::::::
 
 let s:background = 'base0'
